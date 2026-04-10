@@ -91,7 +91,7 @@
       <Version>1.0.0.10</Version>
     </PackageReference>
     <PackageReference Include="NuGet.Packaging">
-      <Version>5.8.0</Version>
+      <Version>5.11.6</Version>
     </PackageReference>
     <PackageReference Include="System.ValueTuple">
       <Version>4.5.0</Version>
@@ -109,6 +109,7 @@
     <GalleryDirectory>$(MSBuildProjectDirectory)\..\..\src\NuGetGallery</GalleryDirectory>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <StaticAssets Include="$(GalleryDirectory)\Scripts\**\*.js" Visible="false" />
     <StaticAssets Include="$(GalleryDirectory)\Content\**\*.css" Visible="false" />
   </ItemGroup>
